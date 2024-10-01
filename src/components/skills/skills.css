@@ -1,0 +1,199 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Skills Section */
+.skills-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.skills-heading {
+  margin-top: 30px;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* Skills Columns */
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.skills-column {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px; 
+  padding: 14px;
+}
+
+.column-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Tech Icon Container */
+.tech-icon-container {
+  position: relative;
+  display: inline-block;
+  padding: 16px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.tech-icon {
+  font-size: 48px; /* equivalent to text-5xl */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect on Tech Icon */
+.tech-icon-container:hover .tech-icon {
+  transform: scale(1.2) rotate(10deg);
+  box-shadow: 0 10px 15px rgba(100, 100, 100, 0.4);
+  border-radius: 50%;
+}
+
+/* Tooltip Styling */
+.tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 1;
+}
+
+.tech-icon-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;  
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Icon Box Styling */
+.icon-box {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-box i {
+  font-size: 40px;
+}
+
+.icon-box:hover {
+  transform: rotate(10deg);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Tooltip Styling for Icon Box */
+.icon-box:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;  
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+/* Color Classes */
+.text-orange {
+  color: #f16529;
+}
+
+.text-blue {
+  color: #2965f1;
+}
+
+.text-yellow {
+  color: #f0db4f;
+}
+
+.text-cyan {
+  color: #61dafb;
+}
+
+.text-green {
+  color: #3FA037;
+}
+
+.text-green-dark {
+  color: #43853D;
+}
+
+.text-blue-dark {
+  color: #007ACC;
+}
+
+.text-blue-light {
+  color: #0078D4;
+}
+
+.text-purple {
+  color: #A000FF;
+}
+
+.text-red {
+  color: #F1502F;
+}
