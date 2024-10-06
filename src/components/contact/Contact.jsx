@@ -58,13 +58,13 @@ const Contact = () => {
             </div>
 
             <div className="contact__card">
-              <i className="bx bxl-instagram contact__card-icon"></i>
+              <i className="uil uil-linkedin contact__card-icon"></i>
 
-              <h3 className="contact__card-title">Instagram</h3>
-              <span className="contact__card-data">Vansh | ਵੰਸ਼</span>
+              <h3 className="contact__card-title">Linkedln</h3>
+              <span className="contact__card-data">Vansh Arora</span>
 
               <a
-                href="https://www.instagram.com/vansh__903"
+                href="https://www.linkedin.com/in/im-vansharora/"
                 target="__blank"
                 className="contact__button"
               >

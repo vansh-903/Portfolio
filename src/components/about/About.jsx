@@ -16,7 +16,7 @@ const About = () => {
           <div className="about__data">
             <Info/>
             <p className="about__description">
-              Aspiring software developer and B.Tech student with strong skills
+              I am a software developer and B.Tech student with strong skills
               in web development and programming. Passionate about technology,
               problem-solving, and enjoys football, trekking, traveling, and
               exploring finance in free time.
